@@ -1,0 +1,74 @@
+/* ปรับเว็บไซต์ให้เหมาะกับมือถือ */
+
+@media (max-width: 800px) {
+    header {
+        width: 94%;
+        top: 12px;
+        margin-top: 12px;
+        padding: 13px 16px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    #hero {
+        min-height: calc(100vh - 70px);
+        padding: 100px 20px 70px;
+    }
+
+    #hero h1 {
+        font-size: clamp(3.5rem, 15vw, 6rem);
+        letter-spacing: -5px;
+    }
+
+    #about,
+    #skill,
+    #work,
+    #contact {
+        padding: 90px 20px;
+    }
+
+    #about h2,
+    #skill h2,
+    #work h2,
+    #contact h2 {
+        font-size: clamp(2.8rem, 13vw, 4.6rem);
+        letter-spacing: -2px;
+    }
+
+    .skill-list,
+    .Project-list {
+        grid-template-columns: 1fr;
+    }
+
+    .Project-list article,
+    .skill-list > div {
+        min-height: 240px;
+    }
+
+    #contact {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 520px) {
+    nav {
+        gap: 10px;
+        font-size: .85rem;
+    }
+
+    header h1 {
+        font-size: 1.15rem;
+    }
+
+    #hero p {
+        font-size: .95rem;
+    }
+
+    #hero::after {
+        width: 300px;
+        height: 110px;
+    }
+}
